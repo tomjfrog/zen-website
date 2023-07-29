@@ -22,7 +22,7 @@ jobs:
          # Configure the project
          jf npmc  --server-id-resolve jfrog-instance --repo-resolve ci_setup_test-npm-dev-virtual
          # Build the project using JFrog CLI
-         jf npmi
+         jf rt npmi
      - name: Failure check
        run: |
          echo "JFROG_BUILD_STATUS=FAIL" >> $GITHUB_ENV
